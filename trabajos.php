@@ -20,6 +20,7 @@ include('header.html');
             <li><a href="contactos.php">Contactos</a></li>
         </ul>
     </div>
+    
 </nav>
 
 <!-- Contenido -->
@@ -65,7 +66,7 @@ include('header.html');
                   <div class="row">
                       <br>
                       <div class="col-md-4 col-lg-3">
-                          <a href="../sacyrchile.cl" target="_blank"><img src="http://placehold.it/300x200" alt="placeholder" class="pull-left thumbnail"></a>
+                          <a href="../sacyrchile.cl" target="_blank"><img src="img/sacyrchile.png" alt="placeholder" class="pull-left thumbnail"></a>
                       </div> 
                       <div class="col-md-8 col-lg-9">
                               <ul class="nav nav-tabs">
