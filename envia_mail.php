@@ -1,5 +1,5 @@
 <?php
-
+var_dump($_POST); 
 include('PHPMailer/class.phpmailer.php');
 include('PHPMailer/class.smtp.php');
 $mail = new PHPMailer();
@@ -13,10 +13,10 @@ $mail->Password = "cipedi5glu";
 
 
 $mail->From = "portafolioramirezbrs@gmail.com"; 
-$mail->FromName = "Portafolio Boris"; 
-$mail->Subject = "Enviado desde Portafolio"; 
-$mail->AltBody = "Este es un mensaje de prueba."; 
-$mail->MsgHTML("<b>Este es un mensaje de prueba</b>."); 
+$mail->FromName = ''.$_POST['nombre'].' '.$_POST['apellido'].''; 
+$mail->Subject = "Mensaje desde Portafolio Boris R."; 
+$mail->AltBody = '"Este es un mensaje de prueba."'; 
+$mail->MsgHTML(''.$_POST['empresa'].'<br>'.$_POST['mensaje'].''); 
 // $mail->AddAttachment("files/files.zip"; 
 // $mail->AddAttachment("files/img03.jpg"; 
 $mail->AddAddress("ramirezbrs@gmail.com", "Boris Ramirez"); 
