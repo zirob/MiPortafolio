@@ -1,5 +1,4 @@
 <?
-// include('header.html');
-include('trabajos.php');
+include('main.php');
 include('footer.html');
 ?>

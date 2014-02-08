@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Portafolio | Boris Ramírez S.</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-    <div class="jumbotron">
-        <div class="row">
-            <div class="col-md-2">
-                <img src="http://placehold.it/150x150" alt="" class="img-thumbnail img-responsive">
-            </div> <!-- col-lg-2 -->
-            <div class="col-md-10">
-                  <h4>
-                      Boris Ramírez S. Joven Informatico, Geeks por naturaleza, amante de la tecnologia y el conocimiento web.
-                  </h4>
-                  <p>
-                    <a class="btn btn-primary btn-large " href="doc/Curriculum Vitae - Boris Ramirez Saavedra.pdf" download="Curriculum Vitae - Boris Ramirez Saavedra">Descargue C.V.</a>
-                    <!-- <a href="https://docs.google.com/file/d/0BzjNkunnxnVzb2o4Zm80QlRabmc/edit?usp=sharing" class="btn btn-primary btn-large ">Descargue C.V.</a> -->
-                  </p>
-            </div>
-        </div>
-    </div>
-</div>
+<?
+include('header.html');
+?>
 
 <!-- boton para que aparece para resoluciones pequeñas (Smartphones) -->
 <nav class="navbar navbar-default" role="navigation">
@@ -97,13 +71,13 @@
                 <h2>Redes Sociales</h2>
             </div>
             <p>
-                <a href="http://www.twitter.com/Zirohb">
-                    <img src="img/FollowOnTwitter.png" alt="Twitter">
+                <a href="http://www.twitter.com/Zirohb" target="_blank">
+                    <img src="img/sigueme_twitter.png" alt="Twitter">
                 </a>
             </p>
             <p>
-                <a href="http://www.twitter.com/Zirohb">
-                    <img src="img/linkedin.png" alt="Twitter">
+                <a href="http://www.linkedin.com/in/borisramirezsaavedra" target="_blank">
+                    <img src="img/sigueme_linkedin.jpg" alt="Twitter">
                 </a>
             </p>
         </div>
