@@ -1,64 +1,134 @@
 
 <footer>
 <div class="container">
-  	<div class="col-md-offset-1 col-md-10 ">
-    		 <div class="row">
-    				  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      		              <h1 class="text-left">Sobre Mí</h1>
-      				</div> 
-      				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      		              <h1 class="text-left">Contacto</h1>
-      				</div>
-    		</div>
-  	</div>
+      
+    <div class="row">
+        <div class="col-md-12">
+             <div class="row">
+                  <div class="col-md-7">
+                            <h1 class="text-left">Sobre Mí</h1>
+                  </div> 
+                  <div class="col-md-5">
+                            <h1 class="text-left">Contacto</h1>
+                  </div>
+            </div>
+        </div>
+    </div>
 
     <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-                <div class="row">
-                    <div class="panel panel-default">
+          <div class="col-md-12">
+                  <div class="panel panel-default">
                         <div class="panel-body">
                               
-                                  <div class=" col-md-7 ">
-                                        <!-- <div class="row"> -->
-                                              <div class="col-md-4">
-                                              			<img src="img/foto_boris.jpg" alt="placeholder" class="img-responsive img-thumbnail">
+                              <div class="row">
+                                    
+                                    <!-- Sobre mi  -->
+                                    <div class=" col-md-7 ">
+                                          <div class="row">
+                                              <div class="col-md-3 text-right">
+                                              			<img src="img/foto_boris2.png" alt="placeholder" class="img-responsive img-thumbnail">
                                               </div>
-                                              <br>
-                                              <div class="col-md-8">
+                                              <div class="col-md-9">
                                               			<p>Soy Boris ramirez, un Ingeniero en Informatica de Concepcion, que ha creado este sitio como muestra online de sus trabajos.<br>
                                                     Desde el analisis hasta el desarrollo de sistemas TI, intento dar a todos mis trabajos un carácter funcional, dimanico e intuitivo
                                                     utilizando las ultimas tecnologias web a disposicion de mis usuarios.</p>
                                               </div>
-                                          <!-- </div> -->
-              		   				       </div>
+                                          </div>
+              		   				         </div>
             		   				         
-                                   <div class=" col-md-5 ">
-                                        <div class="row">
-                  	   				  			  <div class="row">
-                                          			<p>Escribeme y contactarme conmigo:</p>
-                                            		<button type="button" class="btn btn-primary btn-lg btn-block">ENVÍAME TU EMAIL</button>
-                  	   				  			  </div>
-                                        <br>
-                                        <br>
-                                        <div class="row">
-                                                <p>O también puedes encontrarme en:</p>
-                                        </div>
-                                        <div class="row ">
-                                                <!-- <a href="#"><img src="img/facebook-64.png" alt="placeholder" ></a> -->
-                                                <a href="https://twitter.com/Zirohb" target="_blank"><img src="img/twitter-64.png" alt="placeholder"  </a>
-                                                <a href="http://www.linkedin.com/in/borisramirezsaavedra" target="_blank"><img src="img/linkedin-64.png" alt="placeholder" ></a>
-                                                <a href="#" target="_blank"><img src="img/skype-64.png" alt="placeholder" ></a>
+                                    <!-- Contactame y redes sociales -->
+                                    <div class=" col-md-5 ">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                        <p>Escribeme y contactarme conmigo:</p>
+                                                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">ENVÍAME TU EMAIL</button>
 
-                                        </div>
-                                   </div>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                          <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                              <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                                <h4 class="modal-title text-center" id="myModalLabel">Escríbeme</h4>
+                                                              </div>
+                                                              <div class="modal-body">
 
-                        </div>
-                    </div>
-                </div>
-          </div>	
+                                                                      <!-- Formulario -->
+                                                                      <div class="row">
+                                                                        <div class="col-md-12">
+                                                                          <form action="envia_mail.php" name="contactame" class="form-horizontal" role="form" method="POST">
+                                                                              <div class="form-group">
+                                                                                  <div class="row">
+                                                                                      <label for="nombre" class="control-label col-md-3">Nombre</label>
+                                                                                      <div class="col-md-5">
+                                                                                          <input type="text" name="nombre" class="form-control">
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="form-group">
+                                                                                  <div class="row">
+                                                                                      <label for="apellido" class="control-label col-md-3">Apellido</label>
+                                                                                      <div class="col-md-5">
+                                                                                          <input type="text" name="apellido" class="form-control">
+                                                                                      </div>
+                                                                                  </div>   
+                                                                              </div>
+                                                                              <div class="form-group">
+                                                                                  <div class="row">
+                                                                                      <label for="empresa" class="control-label col-md-3">Empresa</label>
+                                                                                      <div class="col-md-5">
+                                                                                          <input type="text" name="empresa" class="form-control">
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="form-group">
+                                                                                  <div class="row">
+                                                                                      <label for="Mensaje" class="control-label col-md-3">Mensaje</label>
+                                                                                      <div class="col-md-8">
+                                                                                          <textarea name="mensaje" class="form-control" rows="7"></textarea> 
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <!-- <div class="row">
+                                                                                      <div class="col-md-offset-3 col-md-6">
+                                                                                          <button type="submit" class="btn btn-primary">Enviar</button>
+                                                                                          <button type="button" class="btn btn-default">Cancelar</button>
+                                                                                      </div>
+                                                                              </div> -->
+                                                                          </form>
+                                                                        </div>
+                                                                      </div>
+
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                <button type="button" class="btn btn-default " data-dismiss="modal">Cerrar</button>
+                                                                <button type="button" class="btn btn-primary">Enviar</button>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <!-- Fin modal -->
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                  <div class="col-md-12">
+                                                          <p>O también puedes encontrarme en:</p>
+                                                  </div>
+                                                  <div class="col-md-12 text-center">
+                                                          <!-- <a href="#"><img src="img/facebook-64.png" alt="placeholder" ></a> -->
+                                                          <a href="https://twitter.com/Zirohb" target="_blank"><img src="img/twitter-64.png" alt="placeholder"  </a>
+                                                          <a href="http://www.linkedin.com/in/borisramirezsaavedra" target="_blank"><img src="img/linkedin-64.png" alt="placeholder" ></a>
+                                                          <a href="http://www.skype.com/es/" target="_blank"><img src="img/skype-64.png" alt="placeholder" ></a>
+                                                  </div>
+                                            </div>
+                                    </div>
+                              </div>
+                        </div><!-- fin panel-body -->
+                  </div>	
+          </div>
     </div>
 </div>
-
 
 <!-- JavaScript plugins (requires jQuery) -->
 <script src="http://code.jquery.com/jquery.js"></script>
