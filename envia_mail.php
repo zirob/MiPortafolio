@@ -1,5 +1,5 @@
 <?php
-var_dump($_POST); 
+// var_dump($_POST); 
 include('PHPMailer/class.phpmailer.php');
 include('PHPMailer/class.smtp.php');
 $mail = new PHPMailer();
@@ -22,7 +22,6 @@ $mail->MsgHTML(''.$_POST['empresa'].'<br>'.$_POST['mensaje'].'');
 $mail->AddAddress("ramirezbrs@gmail.com", "Boris Ramirez"); 
 $mail->IsHTML(true); 
 $mail->SMTPDebug = 2;
-
 if(!$mail->Send()) { 
 	echo "Error: " . $mail->ErrorInfo; 
 } else { 

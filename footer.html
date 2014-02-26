@@ -43,71 +43,76 @@
                                                         <p>Escribeme y contactarme conmigo:</p>
                                                         <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">ENVÍAME TU EMAIL</button>
 
-                                                        <!-- Modal -->
+                                                        <!-- Modal: Ventana emergente -->
                                                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                           <div class="modal-dialog">
+
                                                             <div class="modal-content">
+
                                                               <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                                <h4 class="modal-title text-center" id="myModalLabel">Escríbeme</h4>
+                                                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                                  <h4 class="modal-title text-center" id="myModalLabel">Escríbeme</h4>
                                                               </div>
                                                               <div class="modal-body">
-
+                                                                      
+                                                                     
                                                                       <!-- Formulario -->
-                                                                      <div class="row">
-                                                                        <div class="col-md-12">
-                                                                          <form action="envia_mail.php" name="contactame" class="form-horizontal" role="form" method="POST">
-                                                                              <div class="form-group">
-                                                                                  <div class="row">
-                                                                                      <label for="nombre" class="control-label col-md-3">Nombre</label>
-                                                                                      <div class="col-md-5">
-                                                                                          <input type="text" name="nombre" class="form-control">
-                                                                                      </div>
+                                                                      <form action="envia_mail.php" name="contactame" id="myform" name="myform" class="form-horizontal" role="form" method="POST">
+                                                                          <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                        <div class="form-group">
+                                                                                            <div class="row">
+                                                                                                <label for="nombre" id="nombre" class="control-label col-md-3">Nombre</label>
+                                                                                                <div class="col-md-5">
+                                                                                                    <input type="text" name="nombre" class="form-control nombre">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="row">
+                                                                                                <label for="apellido" id="apellido" class="control-label col-md-3">Apellido</label>
+                                                                                                <div class="col-md-5">
+                                                                                                    <input type="text" name="apellido" class="form-control apellido">
+                                                                                                </div>
+                                                                                            </div>   
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="row">
+                                                                                                <label for="empresa" id="empresa" class="control-label col-md-3">Empresa</label>
+                                                                                                <div class="col-md-5">
+                                                                                                    <input type="text" name="empresa" class="form-control empresa">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="row">
+                                                                                                <label for="Mensaje" id="mensaje" class="control-label col-md-3">Mensaje</label>
+                                                                                                <div class="col-md-8">
+                                                                                                    <textarea name="mensaje" class="form-control mensaje" rows="7"></textarea> 
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                             
                                                                                   </div>
-                                                                              </div>
-                                                                              <div class="form-group">
-                                                                                  <div class="row">
-                                                                                      <label for="apellido" class="control-label col-md-3">Apellido</label>
-                                                                                      <div class="col-md-5">
-                                                                                          <input type="text" name="apellido" class="form-control">
-                                                                                      </div>
-                                                                                  </div>   
-                                                                              </div>
-                                                                              <div class="form-group">
-                                                                                  <div class="row">
-                                                                                      <label for="empresa" class="control-label col-md-3">Empresa</label>
-                                                                                      <div class="col-md-5">
-                                                                                          <input type="text" name="empresa" class="form-control">
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </div>
-                                                                              <div class="form-group">
-                                                                                  <div class="row">
-                                                                                      <label for="Mensaje" class="control-label col-md-3">Mensaje</label>
-                                                                                      <div class="col-md-8">
-                                                                                          <textarea name="mensaje" class="form-control" rows="7"></textarea> 
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </div>
-                                                                              <!-- <div class="row">
-                                                                                      <div class="col-md-offset-3 col-md-6">
-                                                                                          <button type="submit" class="btn btn-primary">Enviar</button>
-                                                                                          <button type="button" class="btn btn-default">Cancelar</button>
-                                                                                      </div>
-                                                                              </div> -->
-                                                                          </form>
-                                                                        </div>
-                                                                      </div>
+                                                                           </div>
+                                                                            <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-default " data-dismiss="modal">Cerrar</button>
+                                                                                <!-- <button type="button" class="btn btn-primary">Enviar</button> -->
+                                                                                <button id="btn_envio" class="btn btn-primary" value="Enviar" >Enviar</button>
+                                                                            </div>
+                                                                      </form><!-- fin de formulario -->
+                                                             </div>
 
-                                                              </div>
-                                                              <div class="modal-footer">
-                                                                <button type="button" class="btn btn-default " data-dismiss="modal">Cerrar</button>
-                                                                <button type="button" class="btn btn-primary">Enviar</button>
-                                                              </div>
+                                                              <!-- carga y resultado del ajax -->
+                                                            <div id="loading" class="position hide">
+                                                                <img  src="img/cargando1.gif">
+                                                                <p class="negrita">Enviando Mensaje...</p>
                                                             </div>
+                                                            <div id="result" class="negrita"></div>
+
                                                           </div>
                                                         </div>
-                                                        <!-- Fin modal -->
+                                                        <!-- Fin modal: fin ventana emergente -->
                                                 </div>
                                             </div>
                                             <br>
@@ -130,11 +135,6 @@
     </div>
 </div>
 
-<!-- JavaScript plugins (requires jQuery) -->
-<script src="http://code.jquery.com/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<!-- <script src="js/respond.js"></script> -->
+
 </footer>
 </html>

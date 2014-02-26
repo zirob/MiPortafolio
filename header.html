@@ -6,7 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/micss.css" rel="stylesheet">
     <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="js/jquery-1.10.2.min"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <!-- <script src="js/respond.js"></script> -->
+    <script language="javascript">
+    
+    $(document).ready(function() {
+
+        $("#btn_envio").click(function() {
+          $('#loading').removeClass('hide');
+
+          var datos = '&nombre=' + $(".nombre").val() + '&apellido=' + $(".apellido").val() + '&empresa=' + $(".empresa").val() + '&mensaje=' + $(".mensaje").val();
+          $.ajax({
+                type: 'POST',
+                url: 'envia_mail.php',
+                data: datos,
+                success: function(data) {
+                    // Imprimimos la respuesta en el div result
+                    $('#loading').addClass('hide');
+                    $('#result').html('Mensaje enviado con exito!');
+                }
+            })
+            
+            return false;
+        });
+
+ 
+    }) 
+   
+    </script>
+
+    <style type="text/css">
+        .enviando{
+            background-color: #ff8800;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 <body>
 <div class="container">
