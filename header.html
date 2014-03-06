@@ -8,37 +8,42 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/micss.css" rel="stylesheet">
     <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="css/ImageOverlay.css" rel="stylesheet" media="screen">
+
     <!-- JavaScript plugins (requires jQuery) -->
-    <script src="js/jquery-1.10.2.min"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <!-- <script src="js/respond.js"></script> -->
+    <!-- jQuery Image Overlay Plugin -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.ImageOverlay.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.2.1/jquery.metadata.js"></script>
     <script language="javascript">
-    
-    $(document).ready(function() {
 
-        $("#btn_envio").click(function() {
-          $('#loading').removeClass('hide');
-
-          var datos = '&nombre=' + $(".nombre").val() + '&apellido=' + $(".apellido").val() + '&empresa=' + $(".empresa").val() + '&mensaje=' + $(".mensaje").val();
-          $.ajax({
-                type: 'POST',
-                url: 'envia_mail.php',
-                data: datos,
-                success: function(data) {
-                    // Imprimimos la respuesta en el div result
-                    $('#loading').addClass('hide');
-                    $('#result').html('Mensaje enviado con exito!');
-                }
-            })
+        $(document).ready(function() {
+            //Ajax envio de mail sin recargar 
+            $("#btn_envio").click(function() {
+              $('#loading').removeClass('hide');
+              var datos = '&nombre=' + $(".nombre").val() + '&apellido=' + $(".apellido").val() + '&empresa=' + $(".empresa").val() + '&mensaje=' + $(".mensaje").val();
+              $.ajax({
+                    type: 'POST',
+                    url: 'envia_mail.php',
+                    data: datos,
+                    success: function(data) {
+                        // Imprimimos la respuesta en el div result
+                        $('#loading').addClass('hide');
+                        $('#result').html('Mensaje enviado con exito!');
+                    }
+                })
+                return false;
+            });
             
-            return false;
-        });
+            // Efecto de las imagen con texto
+            $('#myGallery').ImageOverlay();
 
- 
-    }) 
-   
+            
+        }) 
+
     </script>
 
     <style type="text/css">

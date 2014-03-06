@@ -1,0 +1,27 @@
+<div id="login-body">
+    <div id="login-logo"><img src="img/sacyr.png" border="0"></div>
+    <div id="login-form">
+        <form action="?login=1" method="POST">
+            <table>
+                <tr id="titulo-login"><td colspan="2">Ingreso Usuario</td></tr>
+                <tr>
+                    <td><label id="campo-login">Usuario:</label></td>
+                    <td><input type="text" size="15" name="user" id="user"/></td>
+                </tr>
+                <tr>
+                    <td><label id="campo-login">Password:</label></td>
+                    <td><input type="password" size="15" name="pass" id="pass"</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="Ingresar" ></td>
+                </tr>
+            </table>
+        </form>
+      	
+    </div>
+      <img src="img/login-3.png" style="float: right; left: 130px; position: relative;  top: -23px;">
+      <? if($cat!=99){?>
+            <? }else{ ?>
+             <div id="main-footer"><img src="img/footer.png" style="float: right; left: 218px; position: relative;  top: -23px; width: 1000px;"></div>
+            <?} ?>
+</div>    

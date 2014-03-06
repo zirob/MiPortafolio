@@ -1,0 +1,36 @@
+
+<table style="margin-top:20px; width:1000px;" id="list_registros" border="0" cellpadding="3" cellspacing="2">
+    <tr id="titulo_reg">
+      <td>#</td>
+      <td><label>Codigo de Barra</label></td>
+      <td><label>Familia</label></td>
+      <td><label>SubFamilia</label></td>
+      <td><label>Descripción</label></td>
+      <td><label>Cantidad Sistema</label></td>
+      <td><label>Cantidad Ingresada</label></td>
+
+   </tr>
+              <tr class="listado_datos">
+                <td>1</td>
+                <td>11090700001</td>
+                <td>Electrico AC</td>
+                <td>Control</td>
+                <td>De prueba</td>
+                <td>0</td>
+                <td>3</td>
+           </tr>
+
+              <tr class="listado_datos">
+                <td>2</td>
+                <td>1112530000001</td>
+                <td>Herramientas</td>
+                <td>Mecanica</td>
+                <td>Alicate</td>
+                <td>0</td>
+                <td>0</td>
+           </tr>
+
+                
+   
+           
+</table>

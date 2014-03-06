@@ -1,0 +1,344 @@
+/* 
+    Document   : style
+    Created on : 20-12-2012, 07:38:47 PM
+    Author     : Adolfo Morales.
+*/
+root { 
+    display: block;
+}
+
+#main-sacyr{
+    width: 1000px;
+    margin: 0 auto;
+    display:block;
+    /*border: 1px solid;*/
+}
+#main-sacyr #main-banner{
+    width:1000px;
+    height: 152px;
+    float:left;
+    margin:0;
+    /*background-color: #ccc; */
+}
+
+#main-sacyr #main-banner #img-rotate{
+     width:700px;
+     height: 152px;
+     float:right;
+}
+
+#main-sacyr #banner-div{
+     width:1000px;
+     display: block;
+     font-size: 6pt;
+}
+#main-sacyr #main-menu{
+    width:1000px;
+    height: 30px;
+    float:left;
+    margin:0;
+    padding-top:5px;
+}
+#main-sacyr #main-body{
+    width:1000px;
+    float:left;
+    margin:30px auto;
+    background-color: #EEE;
+    padding-bottom: 20px;
+}
+
+#usuario-div{
+    border:1px solid #000;
+    width: 988px;
+    text-align: right;
+    padding:5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color:#222;
+    background-color: #DDD;
+}
+/*----------------------- Mensaje Error ------------------------*/
+#main-error{
+    width: 100%;
+    border: 2px dotted red;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 30px;
+    padding-top: 7px;
+    margin-bottom: 15px;
+    color:#F00;
+}
+
+#main-ok{
+    width: 100%;
+    border: 2px dotted #334982;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 30px;
+    padding-top: 7px;
+    margin-bottom: 15px;
+    color:#334982;
+}
+
+/*---------------------- Formulario Login ---------------- */
+#login-body{
+    width: 610px;
+    height: 400px;
+    margin:50px auto;
+}
+
+#titulo-login{
+    font-size: 11pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#login-logo{
+    height: 100px;
+    width: 300px;
+    float:left;
+}
+#login-form{
+    float:left;
+    height: 125px;
+    width: 200px;
+    float:left;
+    padding-top: 20px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:1px #009 solid;
+}
+#login-form table{
+    float: left;
+    margin:0 auto;
+}
+input#user, input#pass{
+    border:1px #00C solid;
+}
+
+label#campo-login{
+    font-style: italic;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 10pt;
+    
+}
+/*-----------------------Detalle Proveedor --------------- */
+table#listado-prov, table#detalle-prov{
+    margin:0 auto;
+    
+}
+
+table#detalle-prov tr td {
+    width: 150px;
+    
+}
+
+table#detalle-prov tr td label{
+    font-family: sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-right: 4px;    
+}
+table#detalle-prov tr td input.fo, .fo{
+    border:1px #F00 solid;
+   background-color: #334982;
+    width: 100%;
+    margin: auto;
+    color:#FFF;
+}
+
+table#detalle-prov tr td input.fu, .fu{
+    border:1px #F00 solid;
+   background-color: #334982;
+   
+    margin: auto;
+    color:#FFF;
+}
+
+
+ table#detalle-prov tr td textarea{
+    border:1px #ccc solid;
+    width: 99%;
+    margin: auto;
+    background-color: #334982;
+    color:#FFF;
+}
+
+select{
+    background-color: #334982;
+    color:#FFF;
+    width:200px;
+}
+
+select.filtro{
+    background-color: #334982;
+    color:#FFF;
+    width:auto;
+}
+table#listado-prov{
+    width: 1000px;
+    border: 1px solid;
+    float:left;
+    margin:0;
+}
+
+table#listado-prov tr#titulo-prov{
+    font-weight: bold;
+}
+
+.det{
+    background-color: #CCC;
+}
+
+/*------------ HOME - Bienvenida--------------------*/
+
+#home-pres{
+    width: 600px;
+    
+    margin:0 auto;
+    padding-top: 10px;
+}
+
+#home-pres #home-titulo-pres{
+    font-size: 24pt;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+#home-pres span{
+    float:left;
+    width: 100%;
+    text-align: justify;
+    font-size: 12pt;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+#home-titulo2{
+     font-style: 18pt;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* ------------------- Tabla listado de datos -------*/
+
+table#list_registros{
+    margin:0 auto;
+    width: 900px;
+  }
+
+table#list_registros tr#titulo_reg{
+    margin:0 auto;
+    font-weight: bold;
+    font-family: serif;
+}
+table#list_registros tr#titulo_reg td{
+ border:1px solid #000065;
+ }
+table#list_registros tr#mensaje-sin-reg{
+    font-weight: bold;
+    text-align: center;
+    color:#FFC;
+    background-color: #334982;
+}
+
+table#list_registros tr#mensaje-sin-reg td{
+    padding-top:5px;
+    padding-bottom: 5px;
+}    
+
+table#list_registros tr td#list_link{
+    text-align: right;
+    font-weight: bold;
+}
+
+td#list_link a:hover{ text-decoration:none; color:#00A;}
+td#list_link a:active{ text-decoration: none; color:#00A;}
+td#list_link a:link{ text-decoration: none; color:#00A;}
+
+/* ----------------- Upload Archivos ----------------- */
+
+div#archivos{
+    border:1px solid #0000BB;
+    width: 510px;
+    padding:5px;
+     text-align: center;    
+     margin:0 auto;
+}
+
+div#filelist div{
+    font-weight: bold;
+    width: 500px;
+    border:1px solid;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    padding-left: 10px;
+     text-align: left;
+     background-color: #ddd;
+}
+
+div#filelist div label{
+    float:right;
+}
+
+div#archivos a {
+   
+    font-weight: bold;
+}
+
+
+div#archivos_cargados {
+    width:900px;
+    margin:0 auto;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+div#archivos_cargados table{
+    border:1px solid;
+    width:900px;
+    
+}
+
+/* TABLAS CON DETALLES */
+
+
+#detalle-cc{
+    margin:0 auto;
+}
+
+td#titulo_tabla{
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+    text-align:center; 
+    color:#334982;
+    padding-top: 3px;
+}
+
+#detalle-cc tr td label{
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+#list_link a{
+    text-align: right;
+    float:right;
+}
+
+#detalle-cc tr td label{
+    width:170px;
+    display:block;
+}
+/** **/

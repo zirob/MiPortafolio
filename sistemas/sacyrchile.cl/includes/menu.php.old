@@ -1,0 +1,38 @@
+<?php if($tipo==1 && isset($cat) && $cat!=null && $cat!=99){ ?>
+<div id="smoothmenu1" class="ddsmoothmenu">
+<ul>
+<li><a href="?cat=1">Home</a></li>
+<li><a href="?cat=2">Empresa</a>
+  <ul>
+  <li><a href="?cat=2&sec=4">Usuarios</a></li>
+  <li><a href="?cat=2&sec=12">Centros de Costos</a></li>
+  <li><a href="?cat=2&sec=7">Proveedores</a></li>
+  <li><a href="?cat=2&sec=17">OT</a></li>
+  <li><a href="?cat=2&sec=10">Solicitudes Compra</a></li>
+  <li><a href="?cat=2&sec=15">OC</a></li>
+  </ul>
+</li>
+<li><a href="?cat=3&sec=1">Bodega</a>
+  <ul>
+  <li><a href="?cat=3&sec=1">Bodegas</a></li>
+  <li><a href="?cat=3&sec=3">Productos</a></li>
+  <li><a href="?cat=3&sec=7">Petroleo</a></li>
+  </ul>
+</li>
+<li><a href="?cat=4&sec=1">Reportes</a>
+  <ul>
+  <li><a href="?cat=4&sec=1">Reporte Orden de Compra</a></li>
+  <li><a href="?cat=4&sec=2">Reporte Orden de trabajo</a></li>
+  <li><a href="?cat=4&sec=3">Reporte Petroleo</a></li>
+  <li><a href="?cat=4&sec=4">Reporte Productos</a></li>
+    
+  </ul>
+</li>
+    
+</ul>
+<br style="clear: left" />
+</div>
+<?php } if($tipo==2){ ?>
+
+
+<?php } ?>
